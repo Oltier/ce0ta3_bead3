@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/gyak09/tmp/jshinter-output_path-JUnTX0WS.tmp/router.jshint.js

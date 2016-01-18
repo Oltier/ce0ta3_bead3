@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/gyak09/tmp/jshinter-output_path-KGfvdMYr.tmp/integration/pods/components/error-detail/component-test.jshint.js

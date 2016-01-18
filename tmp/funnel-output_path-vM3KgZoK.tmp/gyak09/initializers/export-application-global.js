@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/gyak09/tmp/funnel-input_base_path-SOqmgDYD.tmp/0/gyak09/initializers/export-application-global.js

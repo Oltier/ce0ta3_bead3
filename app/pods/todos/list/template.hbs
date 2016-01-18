@@ -1,0 +1,16 @@
+{{#each messages}}
+<div class="alert alert-dismissible alert-success">
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    {{this}}
+</div>
+{{/each}}
+
+<div class="page-header">
+    <h1>Feladataim</h1>
+</div>
+
+{{todo-list todos=model}}
+
+<p>
+    <button {{action "showModal" "new-todo-modal" "todos.list"}} class="btn btn-default">Új feladat felvitele</button>
+</p>

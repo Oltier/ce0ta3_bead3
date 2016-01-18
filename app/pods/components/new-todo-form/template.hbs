@@ -1,0 +1,35 @@
+<form class="form-horizontal" method="post" id="myForm">
+    <fieldset>
+        <div class="form-group {{if todos.date "has-error"}}">
+            <label for="date" class="col-lg-2 control-label">Határidő</label>
+            <div class="col-lg-10">
+                {{pikaday-input id="date" name="date" value=data.date format="YYYY.MM.DD." readonly="readonly" class="form-control" placeholder="Meg kell adni, hogy meddig lehet megcsinálni a feladatot." }}
+                <span class="help-block">{{todos.date}}</span>
+            </div>
+        </div>
+        
+        <div class="form-group {{if todos.description "has-error"}}">
+            <label for="leiras" class="col-lg-2 control-label">Leírás</label>
+            <div class="col-lg-10">
+                <textarea class="form-control" rows="3" id="leiras" name="leiras">{{data.description}}</textarea>
+                <span class="help-block">Meg kell adni a feladat konkrét leírását! Nem vagyunk gondolatolvasók, anya! :(</span>
+                <span class="help-block">{{todos.description}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="state" class="col-lg-2 control-label">Státusz</label>
+            <div class="col-lg-10">
+                <label class="radio-inline"><input type="radio" name="state" id="state" value="Új" checked>Új</label>
+                <label class="radio-inline"><input type="radio" name="state" id="state" value="Kész">Kész</label>
+                <label class="radio-inline"><input type="radio" name="state" id="state" value="Elmaradt">Elmaradt</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button {{action "submit"}} class="btn btn-primary">Elküld</button>
+                <button type="reset" class="btn btn-default">Alaphelyzet</button>
+                {{link-to "Vissza" "todos.list" class="btn btn-danger" type="button"}}
+            </div>
+        </div>
+    </fieldset>
+</form>        

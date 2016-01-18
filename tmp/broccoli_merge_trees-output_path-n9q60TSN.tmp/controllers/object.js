@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/gyak09/tmp/broccoli_merge_trees-input_base_path-ebIbY67Z.tmp/12/controllers/object.js

@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/gyak09/tmp/template_compiler-tmp_cache_dir-ZBW9FhOe.tmp/0
