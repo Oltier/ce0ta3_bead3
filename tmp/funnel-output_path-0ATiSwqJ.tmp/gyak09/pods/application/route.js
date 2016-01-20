@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/ce0ta3_bead3/tmp/babel-output_path-LYgbFfsB.tmp/gyak09/pods/application/route.js

@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/ce0ta3_bead3/bower_components/ember-cli-test-loader/test-loader.js

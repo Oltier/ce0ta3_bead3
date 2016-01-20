@@ -12,7 +12,8 @@ export default Ember.Controller.extend({
                     {
                         status: 'new',
                         date: Date.now().toLocaleString(),
-                        description: 'Kitakarítani a konyhát!'
+                        description: 'Kitakarítani a konyhát!',
+                        //steps: [],
                     }, 
                     formData
                 )

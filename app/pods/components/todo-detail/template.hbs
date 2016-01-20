@@ -5,4 +5,36 @@
   <dd>{{todo.description}}</dd>
   <dt>Állapot</dt>
   <dd>{{todo.status}}</dd>
+  <table class="table table-striped">
+    {{#each model.steps as |step|}}
+      <tr>
+        <th>{{step.difficulty}}</th>
+        <td>{{step.description}}</td>
+        <td><button class="btn btn-danger" {{action "delete" step.id}}>Törlés</button></td>
+      </tr>
+    {{/each}}
+  </table>
+  
+  <form class="form-horizontal" method="post" id="myForm">
+    <fieldset>
+        <div class="form-group">
+           <div class="form-group">
+            <label for="newStepDifficulty" class="col-lg-2 control-label">Új lépés nehézsége</label>
+            <div class="col-lg-10">
+                <input class="form-control" type="text" id="newStepDifficulty" name="newStepDifficulty">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+           <div class="form-group">
+            <label for="newStepDescription" class="col-lg-2 control-label">Új lépés nehézsége</label>
+            <div class="col-lg-10">
+                <input class="form-control" type="text" id="newStepDescription" name="newStepDescription">
+            </div>
+          </div>
+        </div>
+    </fieldset>
+  </form>        
+  
+  <button class="btn btn-info" {{action "submit"}}>Új lépés</button>
 </dl>

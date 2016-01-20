@@ -1,0 +1,1 @@
+/home/ubuntu/workspace/ce0ta3_bead3/tmp/template_compiler-tmp_cache_dir-BV3xMGcb.tmp/3
