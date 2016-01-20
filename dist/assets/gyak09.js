@@ -3209,7 +3209,7 @@ catch(err) {
 if (runningTests) {
   require("gyak09/tests/test-helper");
 } else {
-  require("gyak09/app")["default"].create({"name":"gyak09","version":"0.0.0+de61a519"});
+  require("gyak09/app")["default"].create({"name":"gyak09","version":"0.0.0+21afa564"});
 }
 
 /* jshint ignore:end */
